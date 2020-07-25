@@ -1,0 +1,145 @@
+/**
+  * Product: react-text-localize
+  * Description: React Text Localize - Simple Example
+  * Author: Davi Brancol
+  * Author URL: https://github.com/DaviBrancol
+  * License: ICS
+  */
+
+/*----------- Indexes -----------*/
+
+/**
+ * General Code
+ * Header
+ * Hero
+ * Container
+ */
+
+/*------------------------------------
+  General Code
+------------------------------------*/
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.page-container {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("/img/hero-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------------------------------
+  Header
+------------------------------------*/
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  color: #2d3748;
+}
+
+.header nav ul {
+  display: flex;
+}
+
+.header nav ul > li:first-child {
+  margin-left: 0;
+}
+
+.header nav ul > li {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.header nav ul > li:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------------
+  Hero
+------------------------------------*/
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero > div {
+  width: 50%;
+}
+
+.hero > div > h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #1a202c;
+}
+
+.hero > div > h4 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #4a5568;
+}
+
+.hero > div > div {
+  margin-top: 4rem;
+  display: flex;
+}
+
+.hero > div button {
+  padding: 1rem 2rem;
+  margin-right: 2rem;
+  width: 30%;
+  border: 0;
+  background-color: #12abe8;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+}
+
+.hero > img {
+  width: 45%;
+}
+
+/*------------------------------------
+  Container
+------------------------------------*/
+
+.container {
+  width: 1280px;
+}
