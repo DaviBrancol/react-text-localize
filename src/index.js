@@ -15,7 +15,7 @@ export function TextLocalizeProvider(props) {
   }, []);
 
   function localize(id) {
-    return dictionary ? dictionary[id] : null;
+    return dictionary ? dictionary[id] : "Text not found";
   }
 
   return (

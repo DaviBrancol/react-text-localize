@@ -35,10 +35,21 @@ ol {
 .page-container {
   min-height: 100vh;
   width: 100%;
-  background-image: url("/img/hero-bg.png");
+  background-image: url("/img/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 /*------------------------------------
@@ -53,6 +64,7 @@ ol {
   justify-content: center;
   padding: 2rem;
   width: 100%;
+  z-index: 20;
 }
 
 .header > div {
@@ -63,7 +75,7 @@ ol {
 
 .header h1 {
   font-size: 1.6rem;
-  color: #2d3748;
+  color: #83c2f0;
 }
 
 .header nav ul {
@@ -92,8 +104,11 @@ ol {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  z-index: 20;
+  position: relative;
+  text-align: center;
 }
 
 .hero > div {
@@ -104,7 +119,7 @@ ol {
   font-size: 4rem;
   font-weight: 800;
   letter-spacing: 0.05em;
-  color: #1a202c;
+  color: #fff;
 }
 
 .hero > div > h4 {
@@ -112,12 +127,13 @@ ol {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 2;
-  color: #4a5568;
+  color: #f7fafc;
 }
 
 .hero > div > div {
   margin-top: 4rem;
   display: flex;
+  justify-content: center;
 }
 
 .hero > div button {
@@ -130,10 +146,6 @@ ol {
   font-weight: bold;
   font-size: 1.1rem;
   border-radius: 0.5rem;
-}
-
-.hero > img {
-  width: 45%;
 }
 
 /*------------------------------------

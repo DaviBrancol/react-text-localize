@@ -32,8 +32,8 @@ export function Page() {
             <button>Github</button>
           </div>
         </div>
-        <img src="/img/home-image.svg" alt="Home Icon" />
       </div>
+      <div className="page-overlay" />
     </div>
   );
 }
